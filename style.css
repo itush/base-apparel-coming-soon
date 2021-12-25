@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    :root{        
+--Desaturated-Red: hsl(0, 36%, 70%);
+--Soft-Red: hsl(0, 93%, 68%);
+--DG-Red: hsl(0, 6%, 24%);/*
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)*/    
+    }    
+    body{
+    font-family: 'Josefin Sans', sans-serif;   
+    background: url('./images/bg-pattern-desktop.svg') no-repeat;     
+    }
+main{display: flex;}
+.left{
+    width: 830px;
+    padding: 64px 144px 0px 164px;
+}
+#mimg{
+    display: none;
+}
+.left header{margin: 0px 0px 134px 0px;}
+.left h1{text-transform: uppercase;
+        font-size:48px;
+        letter-spacing: 32px;
+        color: var(--DG-Red);}
+.left h1 span{color: var(--Desaturated-Red);
+font-weight: 300;}
+.left p{color: var(--Desaturated-Red);
+        margin: 26px 0px 52px 0px;}
+form{ display: flex;
+}
+form input{ width: 384px;
+            height: 56px;
+            border-radius: 32px;
+            outline: none;
+            position: relative;
+            border: 1px solid var(--DG-Red);
+            padding: 0px 0px 0px 32px;
+            }
+button{
+    position: absolute;
+    width: 96px;
+    height: 56px;
+    border-radius: 32px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 336px;
+    outline: none;
+    border: none;}
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(135deg, hsl(0, 60%, 92%), hsl(0, 76%, 87%));
+}
+#error{width: 288px;
+margin: 16px 0px 0px 32px;
+color: red;}
+#erroricon{
+    position: absolute;
+    opacity: 0;
+    margin: 16px 0px 0px 300px;}
+.right{width: 610px;}
+    
+     
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 600px) {
+main{flex-direction: column;}
+.left header img{margin: 32px 0px 0px 48px;
+}
+.left{margin: 0px 0px 32px 0px;
+        padding: 0px 16px;
+    width: 375px;}
+.left h1{ text-align: center;   
+   letter-spacing: 8px;
+}
+.left p{
+    text-align: center;
+}
+#mimg{display: block;
+   
+    margin: -96px 16px 64px 0px;}
+.right{display: none;}
+form input{ width: 300px;}
+button{
+    margin: 0px 0px 0px 240px;
+}
+#error{
+margin: 16px 0px 0px 0px;}
+#erroricon{
+    margin: 16px 0px 0px 208px;}
+
+    }
