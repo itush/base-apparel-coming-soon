@@ -39,7 +39,7 @@ form input{ width: 384px;
             border-radius: 32px;
             outline: none;
             position: relative;
-            border: 1px solid var(--DG-Red);
+            border: 1px solid var(--Desaturated-Red);
             padding: 0px 0px 0px 32px;
             }
 button{
